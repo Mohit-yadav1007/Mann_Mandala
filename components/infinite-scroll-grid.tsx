@@ -45,11 +45,18 @@ export default function InfiniteScrollGrid({ title, images, names = [], duration
         </div>
       </div>
 
-      <div className="flex flex-col items-center mt-6 gap-2">
-        <a href={buttonLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-gradient-to-r from-amber-600 to-amber-700 text-white font-medium rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all duration-200 hover-raise shadow-lg">
-          {buttonText}
-        </a>
-        <p className="text-xs text-amber-600">{duration}</p>
+      <div className="mt-6">
+        <div className="flex items-center justify-between">
+          <a
+            href={buttonLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2.5 bg-amber-700 text-white font-medium rounded-lg hover:bg-amber-800 transition-colors duration-200 hover-raise shadow"
+          >
+            {buttonText}
+          </a>
+          <span className="text-sm text-amber-700">{duration}</span>
+        </div>
       </div>
     </div>
   )
