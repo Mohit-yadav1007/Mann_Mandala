@@ -4,6 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import NavMenu from '@/components/nav-menu'
+import Footer from '@/components/footer'
 
 // Root layout for the app:
 // - Loads global styles and fonts
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body suppressHydrationWarning className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <NavMenu />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>
