@@ -98,7 +98,7 @@ export default function WorkshopsPage() {
         </div>
       </section>
 
-      <hr className="my-8 border-amber-200" />
+      {/* Removed extra separator before CTA per request */}
 
       {/* Introduction */}
       <section id="intro" className="mx-auto max-w-4xl px-4 py-8 text-center">
@@ -155,6 +155,11 @@ export default function WorkshopsPage() {
               </details>
             ))}
           </div>
+        </div>
+        {/* Booking & Download buttons placed directly under pricing table */}
+        <div className="mt-6 flex items-center justify-between">
+          <button onClick={handleDownload} className="px-5 py-2.5 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition-colors">📥 Download Brochure</button>
+          <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition-colors">Book Now</a>
         </div>
       </section>
 
@@ -233,28 +238,8 @@ export default function WorkshopsPage() {
         </div>
       </section>
 
-      <hr className="my-8 border-amber-200" />
-
-      {/* CTA */}
-      <section className="mx-auto max-w-3xl px-4 py-16 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-amber-900">Ready to Book Your Workshop?</h2>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="bg-indigo-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-indigo-700 transition-colors">Book Now</a>
-          <button onClick={handleDownload} className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition">📥 Download Brochure</button>
-        </div>
-      </section>
-
-      <hr className="my-8 border-amber-200" />
-
-      {/* Contact Footer (grid layout) */}
-      <footer className="mx-auto max-w-4xl px-4 pb-16 text-amber-800/90">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center md:text-left">
-          <div className="p-4 bg-white rounded-xl border border-amber-100 shadow-sm"><strong>📞 Phone</strong><div>8007367650</div></div>
-          <div className="p-4 bg-white rounded-xl border border-amber-100 shadow-sm"><strong>💬 WhatsApp</strong><div>8668765859</div></div>
-          <div className="p-4 bg-white rounded-xl border border-amber-100 shadow-sm"><strong>📧 Email</strong><div><a className="underline" href="mailto:mannmandala07@gmail.com">mannmandala07@gmail.com</a></div></div>
-          <div className="p-4 bg-white rounded-xl border border-amber-100 shadow-sm"><strong>📷 Instagram</strong><div><a className="underline" href="https://instagram.com/mann_mandalas" target="_blank" rel="noreferrer">@mann_mandalas</a></div></div>
-        </div>
-      </footer>
+      {/* Contact grid removed to use global footer instead */}
     </main>
   )
 }
+ 
