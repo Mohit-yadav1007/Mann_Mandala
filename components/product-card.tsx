@@ -48,8 +48,9 @@ export default function ProductCard({ name, duration, image, onImageClick }: Pro
       </div>
       <div className="mt-3 text-center">
         <h3 className="font-medium text-amber-800 text-sm md:text-base">{name}</h3>
-        <p className="text-xs text-amber-600 mt-1">{duration}</p>
+{/*         <p className="text-xs text-amber-600 mt-1">{duration}</p> */}
       </div>
     </div>
   )
 }
+
